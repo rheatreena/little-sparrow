@@ -1,7 +1,5 @@
 import React from 'react'
 import logo  from  "../../images/logo_ls.png"
-import {Link} from "gatsby"
-import { wheat } from 'color-name'
 export default function Header() {
     return (
         <div className ="header py-1">
