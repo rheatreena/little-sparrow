@@ -46,20 +46,6 @@ const IndexPage = ({data}) => (
 
 export const graphQuery = graphql `
 {
-  img1:file(relativePath:{eq:"collage3.png"}){
-    childImageSharp{
-      fluid{
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
-  img2:file(relativePath:{eq:"background_3.jpg"}){
-    childImageSharp{
-      fluid{
-        ...GatsbyImageSharpFluid_tracedSVG
-      }
-    }
-  }
   menu: allContentfulProject {
     edges {
       node {
