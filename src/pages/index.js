@@ -1,22 +1,78 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import BackgroundBanner from "../components/Shared/BackgroundBanner"
+import Info from '../components/Home/Info'
+import Project from '../components/Home/Project'
+import Contact from '../components/Home/Contact'
+import GalleryPage from '../components/Home/GalleryPage'
+import {Carousel} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
+import BackgroundImage from 'gatsby-background-image'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Home"  keywords = {[`gatsby`,`application`,`react`]}/>
+
+    <BackgroundBanner />
+    {/* <Carousel>
+  <Carousel.Item>
+      <BackgroundImage fluid = {data.img1.childImageSharp.fluid}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+  <BackgroundImage fluid = {data.img1.childImageSharp.fluid}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  </Carousel> */}
+    <Info/>
+<GalleryPage/>
+    {/* <Contact/> */}
   </Layout>
 )
 
+export const graphQuery = graphql `
+{
+  img1:file(relativePath:{eq:"collage3.png"}){
+    childImageSharp{
+      fluid{
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  img2:file(relativePath:{eq:"background_3.jpg"}){
+    childImageSharp{
+      fluid{
+        ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  menu: allContentfulProject {
+    edges {
+      node {
+        id
+        title
+        description
+        images {
+          fixed(width:200, height: 200) {
+            ...GatsbyContentfulFixed_tracedSVG
+          }
+        }
+      }
+    }
+  }
+}`
 export default IndexPage
