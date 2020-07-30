@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6{
 
 .footer{
   background: #14a098;
+  position: relative;
 
 }
 .header{
@@ -179,6 +180,33 @@ legend {
   padding: 5px 10px;
 }
 
+
+.box{
+  margin:0 auto;
+  width:100%;
+  padding-top: 10px;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;  background:#f9f9f9;
+  position: relative;
+  border:2px solid #333;
+  }
+
+  .outer{
+    position: relative;;
+    top:100;
+    left:100;
+    width:100%;
+    height:100%;
+  }
+  .inner{
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    margin: 0 auto;
+    position: relative;
+    background:gray;
+  }
 /*{
   box-sizing: border-box;
 }
