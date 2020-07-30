@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo  from  "../../images/logo.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +23,7 @@ export default class Navbar extends Component {
             },
             {
             id: 2,
-            path: '/journey',
+            path: '/journeyPage',
             title: 'Our journey'
             },
             {
@@ -74,7 +73,24 @@ export default class Navbar extends Component {
                         </li> */}
                     </ul>
                 </div>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav ml-auto">
+                <li>
+                    <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#3b5998'}}><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                   <li>
+                   <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#FF0000'}}><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+
+                       </li>
+                       <li>
+                    <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#00acee'}}><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
+                   <li>
+                   <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color:'#0e76a8'}}><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+
+                       </li>
+
+                </ul>
+
+
+               {/*  <ul class="nav navbar-nav navbar-right">
                <li>
                <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" className ="facebook social"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
                </li>
@@ -88,7 +104,7 @@ export default class Navbar extends Component {
                <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/"  className="youtube social"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
 
                </li>
-            </ul>
+            </ul> */}
                 {/* <div className ="collapse navbar-collapse" style={{float:'right'}}>
                     <a href="#"  className="facebook social"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
                       <a href="#" className="twitter social"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
@@ -97,6 +113,8 @@ export default class Navbar extends Component {
                        <a href="#/"  className="whatsapp social"><FontAwesomeIcon icon={faWhatsapp} size="2x" /></a>
 
                 </div> */}
+
+
             </nav>
         )
     }

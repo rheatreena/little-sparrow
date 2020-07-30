@@ -6,11 +6,9 @@ export default function Contact() {
     return (
         <section className ="contact py-5">
             <Title title="contact us"></Title>
-            <div className="container">
+            <div className="container" style ={{border: '5px double black', padding: 'top right bottom left'}}>
             <div className = "row">
                 <div className ="col-10 col-sm-8 col-md-6 mx-auto">
-                    <fieldset>
-                        <legend>Details</legend>
                     <form action = "https://formspree.io/treenabhi@gmail.com" method ="POST">
                         <div className="form-group">
                             <label htmlFor ="name">
@@ -41,7 +39,6 @@ export default function Contact() {
                         </div>
                         <button type = "submit" className ="btn btn-yellow btn-block text-capitalize mt-5">Submit</button>
                     </form>
-                    </fieldset>
                 </div>
                {/*  <Link to = "/contactPage/">
             <button id ="submit" className= "btn text-uppercase btn-yellow" >Contact page</button>
