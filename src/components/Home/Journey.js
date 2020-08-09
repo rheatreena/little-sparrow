@@ -6,9 +6,6 @@ import {
 } from '@merc/react-timeline';
 import logo  from "../../images/misc/medical_camp.jpg"
 import logo1 from "../../images/misc/scholarship.jpeg"
-import logo2 from  "../../images/Background/collage2.jpg"
-import Layout from "../layout"
-import SEO from "../seo"
 export default function Journey() {
   return (
     <div className="container" >
