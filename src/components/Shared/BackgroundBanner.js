@@ -8,7 +8,6 @@ import BackgroundSlider from 'gatsby-image-background-slider'
 
 const BackgroundBanner = () => {
   const [index, setIndex] = React.useState(0);
-    console.log(index)
   React.useEffect(() => {
     const timer = setInterval(() => {
 
@@ -45,11 +44,12 @@ const BackgroundBanner = () => {
     allFile: { edges: images }, //destructuring
   } = useStaticQuery(allImagesQuery)
 
-
   return(
-        <div>
-          <Img
-            style={{backgroundPosition: 'top',height:'750px',backgrondSize:'auto'}}
+          <div className="wrapper">
+          <Img id ="slider"
+            style={{backgroundPosition: 'top',height:'750px',backgrondSize:'auto', animation: 'slide 0.5s forwards',
+              animationDelay: '2s'
+          }}
             fluid={images[index].node.childImageSharp.fluid}
             alt={images[index].node.base.split(".")[0]}
         />

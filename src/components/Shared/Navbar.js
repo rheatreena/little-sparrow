@@ -75,15 +75,15 @@ export default class Navbar extends Component {
                 </div>
                 <ul class="nav navbar-nav ml-auto">
                 <li>
-                    <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#3b5998'}}><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                    <a href="https://www.facebook.com/" class="nav-link" target="_blank" style={{color: '#3b5998'}}><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
                    <li>
-                   <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#FF0000'}}><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+                   <a href="https://www.youtube.com/" class="nav-link" target="_blank" style={{color: '#FF0000'}}><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
 
                        </li>
                        <li>
-                    <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color: '#00acee'}}><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
+                    <a href="https://www.twitter.com/" class="nav-link" target="_blank" style={{color: '#00acee'}}><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
                    <li>
-                   <a href="https://www.linkedin.com/in/trina-pal-9a8a1139/" class="nav-link" target="_blank" style={{color:'#0e76a8'}}><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                   <a href="https://www.linkedin.com/" class="nav-link" target="_blank" style={{color:'#0e76a8'}}><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
 
                        </li>
 

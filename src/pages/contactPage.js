@@ -10,9 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ContactPage = ({data}) => (
   <Layout>
     <SEO title="Home"  keywords = {[`gatsby`,`application`,`react`]}/>
+    <div style={{backgroundColor:'#def2f1', height: '1050px',
+        width: '100%'}}>
     <section>
     <Contact/>
-    </section>
+    </section></div>
   </Layout>
 )
 

@@ -43,7 +43,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ProjectPage = ({data}) => (
     <Layout>
       <SEO title="Home"  keywords = {[`gatsby`,`application`,`react`]}/>
-      <Project items = {data.menu}/>
+      <div style={{backgroundColor:'#def2f1', height: '1050px',
+        width: '100%'}}>
+        <Project items = {data.menu}/></div>
     </Layout>
   )
 

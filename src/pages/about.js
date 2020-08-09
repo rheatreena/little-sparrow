@@ -11,7 +11,6 @@ const AboutPage = ({data}) => (
   <Layout>
     <SEO title="Home"  keywords = {[`gatsby`,`application`,`react`]}/>
 
-    <BackgroundBanner title = "about us !"/>
     <Info/>
   </Layout>
 )

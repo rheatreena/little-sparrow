@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdbreact';
 import logo  from  "../../images/background/collage3.png"
+import { Link } from "gatsby"
 class GalleryPage extends Component {
   render() {
     return (
@@ -11,9 +12,9 @@ class GalleryPage extends Component {
           <MDBCard wide>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>MDBCard title</MDBCardTitle>
-              <MDBCardText>Some quick example text to build on the card title and make up the bulk of the card's content.</MDBCardText>
-              <MDBBtn href="#">MDBBtn</MDBBtn>
+              <MDBCardTitle>Project1: Supporting Borail Upojati Kalyan Sangha</MDBCardTitle>
+              <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
+              <Link to = "/projects/"><MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -21,9 +22,10 @@ class GalleryPage extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>MDBCard title</MDBCardTitle>
-              <MDBCardText>Some quick example text to build on the card title and make up the bulk of the card's content.</MDBCardText>
-              <MDBBtn href="#">MDBBtn</MDBBtn>
+              <MDBCardTitle>Project2:Education Scholarship</MDBCardTitle>
+              <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
+              <Link to = "/projects/">
+                <MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -31,9 +33,10 @@ class GalleryPage extends Component {
           <MDBCard cascade>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>MDBCard title</MDBCardTitle>
-              <MDBCardText>Some quick example text to build on the card title and make up the bulk of the card's content.</MDBCardText>
-              <MDBBtn href="#">MDBBtn</MDBBtn>
+              <MDBCardTitle>Project3: Medical camp for kids</MDBCardTitle>
+              <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
+              <Link to = "/projects/">
+                <MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

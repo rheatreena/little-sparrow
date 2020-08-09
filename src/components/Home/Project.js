@@ -15,24 +15,30 @@ export default class Project extends Component {
             return (
                 <section className ="project py-5">
                 <div className = "container">
-                    <Title title="current Project"/>
                     <div className = "row">
-                        {/* <div className = "col">  */}
+                       <div className = "col" style={{position: 'relative',left: '-100px'}}>
+                           <Title title="current Projects"/>
                            {this.state.items.map(({node}) => {
-                               console.log("node " + node.id)
                                return (
-                                <div key ={node.id} className =" col-8 col-md-2 my-3 d-flex mx-auto">
+                                <div key ={node.id} className =" col-12  my-5 d-flex mx-auto">
+                                    <ul className='list-group'><li className='list-group-item d-flex justify-content-between align-items-left'>
                                     <div>
                                         <Image fixed ={node.images[0].fixed} />
                                     </div>
-                                    <div className = "flex-grow-1 px-3">
+                                    <div className = "flex-grow-1 px-5">
                                         <div className="d-flex justify-content-between">
-                                            <h3 className = "mb-0">{node.title}</h3>
+                                            <h3 className = "mb-4">{node.title}</h3>
                                         </div>
                                         <p className ="text-muted">
-                                            {node.description}
+                                            <article>
+                                            Some text written by Cicero that's used to fill spaces on
+                                            graphical design and publishing before the actual words have been written.
+                                            The reason why it is difficult to understand is to draw attention away from
+                                            the words on a page and to focus it on the design instead.
+                                            </article>
+
                                         </p>
-                                    </div>
+                                    </div></li></ul>
 
                                 </div>
                                )
@@ -41,6 +47,7 @@ export default class Project extends Component {
                            }
 
                        {/*  </div> */}
+                    </div>
                     </div>
                     <div className="col-10 col-sm-8 mx-auto text-center">
                     <Link to = "/projects/">

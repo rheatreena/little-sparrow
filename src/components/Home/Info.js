@@ -9,18 +9,23 @@ export default function Info() {
             <div className="container">
                 <Title title = "Our Story"/>
                 <div className="row">
-                    <div className="col-10 col-sm-8 mx-auto text-center">
+                    <div className="col-12  mx-auto text-center"  style={{textAlign:'center',paddingLeft: '50pt',
+                      paddingRight: '50pt'}}>
                         <p className = "lead text-muted mb-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                         ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                          officia deserunt mollit anim id est laborum.
+                          Little Sparrow is a strong team of 48 people with a vision to make a difference in our society.
+                          We come from different spheres of life and from different parts of the world.
+                          In September 2019, we read a newspaper article on the poor condition of Borail Upajati Kalyan Sangha
+                          in Buniadpur, Uttar Dinajpur. Mr. Sukhumar Roy Chowdhury set up Borail Upajati Kalyan Sangha in 1971
+                          and since then, he has been instilling basic education to hundreds of students belonging to socio-economic
+                          backward classes of our society. The home hosts the students at its premises and takes care of their basic
+                          necessities. We joined Sukhumar Babu in his quest of making a difference in the society in 2019 and since then,
+                          we have been supporting the home and its students. At present, Little Sparrow focuses on two primary
+                          areas - health and education. In the coming days, we plan to organize a health camp for kids. In addition,
+                          we are deliberating on an idea of providing educational scholership to needy students.
+                          Please support us in our quest of making our society better.
                         </p>
-                        <Link to = "/about/">
-                            <button className="btn text-uppercase btn-yellow">about page</button>
+                        <Link to = "/contactPage/">
+                            <button className="btn text-uppercase" style={{color: 'green', border: '1px solid'}}>Contact us</button>
                         </Link>
 
                     </div>
