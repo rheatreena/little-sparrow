@@ -40,7 +40,7 @@ export default function Contact() {
                             <label htmlFor ="message">
                                 message
                             </label>
-                            <textarea rows="4" cols="55" name="comment"  style={{border:"gray"}} placeholder = "Enter text here..." required=""></textarea>
+                            <textarea rows="4" cols="56" name="comment"  style={{border:"gray"}} placeholder = "Enter text here..." required=""></textarea>
                         </div>
                         <div style={{textAlign:'center'}}>
                             <button type = "submit"  style={{color: 'green', border: '1px solid',margin:'auto'}}>Submit</button>
@@ -48,9 +48,6 @@ export default function Contact() {
                         </div>
                     </form>
                 </div>
-               {/*  <Link to = "/contactPage/">
-            <button id ="submit" className= "btn text-uppercase btn-yellow" >Contact page</button>
-               </Link> */}
             </div>
             </div>
 

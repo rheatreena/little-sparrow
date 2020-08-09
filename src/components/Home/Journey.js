@@ -13,18 +13,18 @@ export default function Journey() {
       <Events style={{color:'green'}}>
         <ImageEvent
           date="October,2019"
-          text="we have started our journey"
+          text="we have started our journey with Borail Project"
           src ={logo} />
 
         <ImageEvent
           date="December, 2019"
-          text=" upcoming"
+          text="Upcoming Project 1: Medical Camp"
           src ={logo} />
 
 
         <ImageEvent
           date="May,2020"
-          text="Started helping for Amphan disaster"
+          text="Upcoming Project 2: Education Scholarship"
           src={logo1}>
         </ImageEvent>
       </Events>

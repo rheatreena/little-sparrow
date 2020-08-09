@@ -12,7 +12,7 @@ class GalleryPage extends Component {
           <MDBCard wide>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>Project1: Borail Upojati Kalyan Sangha</MDBCardTitle>
+              <MDBCardTitle>Project1: Supporting Borail Upojati Kalyan Sangha</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
                 <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
             </MDBCardBody>
@@ -22,7 +22,7 @@ class GalleryPage extends Component {
           <MDBCard narrow>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>Project2:Education Scholarship</MDBCardTitle>
+              <MDBCardTitle>Project2:Helping Students with Education Scholarship</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
 
                 <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
@@ -33,7 +33,7 @@ class GalleryPage extends Component {
           <MDBCard cascade>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>Project3: Medical camp for kids</MDBCardTitle>
+              <MDBCardTitle>Project3: Setup Medical camp for kids</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
               <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
             </MDBCardBody>
