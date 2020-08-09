@@ -1,15 +1,6 @@
 import React, { Component } from 'react'
-import Title from '../Shared/Title'
-import Image from  'gatsby-image'
-import {Link } from 'gatsby'
-export default class ProjectDetails extends Component {
 
-    /* constructor(props){
-        super(props);
-        this.state = {
-            items: props.items.edges
-        }
-    } */
+export default class ProjectDetails extends Component {
     render() {
         
             return (
@@ -33,9 +24,6 @@ export default class ProjectDetails extends Component {
       <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
     </div>
   </div>
-  
- 
-  
 </div>
 </body>
 

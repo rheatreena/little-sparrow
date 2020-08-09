@@ -1,8 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BackgroundBanner from "../components/Shared/BackgroundBanner"
 import Donation from '../components/Home/Donation'
 import 'bootstrap/dist/css/bootstrap.min.css';
 

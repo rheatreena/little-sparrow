@@ -30,12 +30,11 @@ export default class Project extends Component {
                                             <h3 className = "mb-4">{node.title}</h3>
                                         </div>
                                         <p className ="text-muted">
-                                            <article>
+
                                             Some text written by Cicero that's used to fill spaces on
                                             graphical design and publishing before the actual words have been written.
                                             The reason why it is difficult to understand is to draw attention away from
                                             the words on a page and to focus it on the design instead.
-                                            </article>
 
                                         </p>
                                     </div></li></ul>

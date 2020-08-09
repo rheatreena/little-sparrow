@@ -20,10 +20,8 @@ export default class Navbar extends Component {
   };
   componentDidMount() {
     this.wait(1000);
-    // this.fetchGitHub();
   }
  render() {
-    console.log(this.state.loading)
    if (this.state.loading) return (
      <div className="loading">
        <div className="loader"></div>
@@ -37,7 +35,6 @@ export default class Navbar extends Component {
 
        <Info/>
        <GalleryPage/>
-       {/* <Contact/> */}
      </Layout>
    )
  }

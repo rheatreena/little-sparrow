@@ -1,10 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Button } from "react-bootstrap";
-import BackgroundImage from 'gatsby-background-image'
-import BackgroundSlider from 'gatsby-image-background-slider'
-//import PropTypes from 'prop-types'
 
 const BackgroundBanner = () => {
   const [index, setIndex] = React.useState(0);
@@ -60,7 +56,3 @@ const BackgroundBanner = () => {
 }
 
 export default BackgroundBanner
-/*BackgroundBanner.defaultProps = {
-title: "default",
-styleClass: "default_background"
-}*/

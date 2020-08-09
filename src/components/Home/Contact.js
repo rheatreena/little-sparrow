@@ -1,6 +1,5 @@
 import React from 'react'
 import Title from '../Shared/Title'
-import {Link } from 'gatsby'
 
 export default function Contact() {
     return (
@@ -41,7 +40,7 @@ export default function Contact() {
                             <label htmlFor ="message">
                                 message
                             </label>
-                            <textarea rows="4" cols="53" name="comment"  style={{border:"gray"}} placeholder = "Enter text here..." required=""></textarea>
+                            <textarea rows="4" cols="55" name="comment"  style={{border:"gray"}} placeholder = "Enter text here..." required=""></textarea>
                         </div>
                         <div style={{textAlign:'center'}}>
                             <button type = "submit"  style={{color: 'green', border: '1px solid',margin:'auto'}}>Submit</button>

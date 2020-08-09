@@ -12,9 +12,9 @@ class GalleryPage extends Component {
           <MDBCard wide>
             <MDBCardImage cascade className="img-fluid" src={logo} />
             <MDBCardBody cascade>
-              <MDBCardTitle>Project1: Supporting Borail Upojati Kalyan Sangha</MDBCardTitle>
+              <MDBCardTitle>Project1: Borail Upojati Kalyan Sangha</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
-              <Link to = "/projects/"><MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
+                <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -24,8 +24,8 @@ class GalleryPage extends Component {
             <MDBCardBody cascade>
               <MDBCardTitle>Project2:Education Scholarship</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
-              <Link to = "/projects/">
-                <MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
+
+                <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -35,11 +35,11 @@ class GalleryPage extends Component {
             <MDBCardBody cascade>
               <MDBCardTitle>Project3: Medical camp for kids</MDBCardTitle>
               <MDBCardText>This is a placeholder where we will write details about our project.Also User can nevigate to the project landing page by clicking the below button</MDBCardText>
-              <Link to = "/projects/">
-                <MDBBtn href="/projects/" style={{color: 'green', border: '1px solid'}}>Project Details</MDBBtn></Link>
+              <MDBBtn><Link to="/projects/" style={{color: 'green', border: '1px solid',padding: '5px 10px 5px 5px'}}>Project Details</Link></MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
+
       </MDBRow>
       </div>
     )
