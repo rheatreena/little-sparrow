@@ -8,13 +8,13 @@ export default function Footer() {
                 <div className = "logo-credit">
                         <span>
                             <p>
-                        <b>Logo Credits: </b>banasreemandal@gmail.com
+                        <b>Logo Credit: </b>banasreemandal@gmail.com
                             </p>
                             </span>
 
                     </div>
                     <div className = "col-10 mx-auto col-md-6 text-black text-center text-capitalize">
-                        <h5 style ={{textAlign:'center'}}>
+                        <h5 style ={{textAlign:'center',position:"relative"}}>
                             all rights reserved &copy;Little Sparrow{new Date().getFullYear().toString()}
                         </h5>
                     </div>
